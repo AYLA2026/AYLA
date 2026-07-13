@@ -1,0 +1,19 @@
+{
+  "name": "@ayla/auth-sdk",
+  "version": "1.0.0",
+  "description": "Ayla Authentication SDK",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ayla/types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

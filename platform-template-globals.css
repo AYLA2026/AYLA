@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-arabic: 'Noto Sans Arabic', 'Cairo', sans-serif;
+    --font-english: 'Inter', 'Poppins', sans-serif;
+  }
+
+  * {
+    @apply border-ayla-gold-400/20;
+  }
+
+  body {
+    @apply bg-ayla-bg-primary text-ayla-text-primary;
+    font-family: var(--font-arabic);
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a0f0a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3d2b1f;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c9a227;
+  }
+}
+
+@layer components {
+  .ayla-glass {
+    @apply bg-ayla-bg-secondary/80 backdrop-blur-xl border border-ayla-gold-400/20;
+  }
+
+  .ayla-glow {
+    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.3);
+  }
+
+  .ayla-gradient-gold {
+    background: linear-gradient(135deg, #c9a227, #e8d5a3);
+  }
+
+  .ayla-text-gradient {
+    @apply bg-gradient-to-r from-ayla-gold-400 to-ayla-gold-200 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

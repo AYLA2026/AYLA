@@ -1,0 +1,19 @@
+{
+  "name": "@ayla/design-tokens",
+  "version": "1.0.0",
+  "description": "Ayla Design Tokens - Colors, Typography, Spacing",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
